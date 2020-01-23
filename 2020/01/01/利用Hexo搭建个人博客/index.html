@@ -57,8 +57,13 @@
 <meta property="og:image" content="http://yoursite.com/2020/01/01/%E5%88%A9%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/gitnotice.png">
 <meta property="og:image" content="http://yoursite.com/2020/01/01/%E5%88%A9%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/gitbash.png">
 <meta property="og:image" content="http://yoursite.com/2020/01/01/%E5%88%A9%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/landscape.png">
+<meta property="og:image" content="http://yoursite.com/2020/01/01/%E5%88%A9%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/newrepo.png">
+<meta property="og:image" content="http://yoursite.com/2020/01/01/%E5%88%A9%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/name.png">
+<meta property="og:image" content="http://yoursite.com/2020/01/01/%E5%88%A9%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/ssh.png">
+<meta property="og:image" content="http://yoursite.com/2020/01/01/%E5%88%A9%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/pub.png">
+<meta property="og:image" content="http://yoursite.com/2020/01/01/%E5%88%A9%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/newkey.png">
 <meta property="article:published_time" content="2020-01-01T10:26:51.643Z">
-<meta property="article:modified_time" content="2020-01-22T13:01:43.992Z">
+<meta property="article:modified_time" content="2020-01-23T12:57:25.737Z">
 <meta property="article:author" content="Yuki">
 <meta property="article:tag" content="web">
 <meta name="twitter:card" content="summary">
@@ -241,7 +246,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-01-22 21:01:43" itemprop="dateModified" datetime="2020-01-22T21:01:43+08:00">2020-01-22</time>
+                <time title="修改时间：2020-01-23 20:57:25" itemprop="dateModified" datetime="2020-01-23T20:57:25+08:00">2020-01-23</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -276,7 +281,7 @@
         <p>Hexo是一个快速、简洁且高效的博客框架。利用Hexo框架可以快速搭建属于自己的博客，创造一片仅属于自己的网络空间。这篇博客介绍了windows操作系统如何使用Hexo创建博客，并利用Github让你的博客发布到互联网上。</p>
  <a id="more"></a> 
 
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>安装Hexo并不需要繁杂的操作和大型软件，只需安装下列应用程序即可</p>
+<h2 id="安装Hexo博客"><a href="#安装Hexo博客" class="headerlink" title="安装Hexo博客"></a>安装Hexo博客</h2><p>安装Hexo并不需要繁杂的操作和大型软件，只需安装下列应用程序即可。</p>
 <h3 id="Node-js-Git"><a href="#Node-js-Git" class="headerlink" title="Node.js + Git"></a>Node.js + Git</h3><p>准备工作主要就是安装Node.js和Git。Node.js是一个基于Chrome V8引擎的Javascript运行环境，提供了一个让JavaScript运行在服务端的平台。Git是一个开源的分布式版本系统，可以有效、高速地处理从很小到非常大的项目版本管理。Git是为了帮助管理Linux内核开发而开发的一个开放源码的版本控制软件。</p>
 <ul>
 <li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>（Node.js 版本需不低于 8.10，建议使用 Node.js 10.0 及以上版本）</li>
@@ -313,10 +318,46 @@
 <img src="/2020/01/01/%E5%88%A9%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/landscape.png" class title="avatar">
 </div>
 
-<h2 id="将博客部署到远端"><a href="#将博客部署到远端" class="headerlink" title="将博客部署到远端"></a>将博客部署到远端</h2><p>这样搭建的博客只能在本地电脑上显示，这样显然是不够的。要想让自己的博客被他人浏览还需要将博客部署到远端服务器上。对于家境贫寒的人来说，每个月支付一笔钱来维持服务器或是在家里自己搭建一台服务器主机都是不现实的。我也是个家境贫寒的人，只能通过免费的方式部署博客。免费部署的方法有多种，下面我仅介绍将博客部署到GitHub上的方式。Github是一个面向开源及私有软件项目的托管平台。该平台已经成为世界各地的人互相交流、学习的大型平台，相信任何程序员都会有在这个平台上学习交流的精经历。我们所使用的是Github所提供的GitHub Page服务，它是免费的静态网页托管服务，可以用来托管博客、项目官网等静态网页。这无疑是我们家境贫寒之人的福音。话不多说，我们开始把！</p>
+<h2 id="部署博客"><a href="#部署博客" class="headerlink" title="部署博客"></a>部署博客</h2><p>这样搭建的博客只能在本地电脑上显示，这样显然是不够的。要想让自己的博客被他人浏览还需要将博客部署到远端服务器上。对于家境贫寒的我来说，每个月支付一笔钱来维持服务器或是在家里自己搭建一台服务器主机都是不现实的。不过好在很多平台都提供了免费的部署服务。下面我仅介绍将博客部署到GitHub上的方式。Github是一个面向开源及私有软件项目的托管平台。该平台已经成为世界各地的人互相交流、学习的大型平台，相信任何程序员都会有在这个平台上学习交流的精经历。我们所使用的是Github所提供的GitHub Page服务，它是免费的静态网页托管服务，可以用来托管博客、项目官网等静态网页。这无疑是我们家境贫寒之人的福音。话不多说，我们开始把！</p>
 <h3 id="配置SSH-Key"><a href="#配置SSH-Key" class="headerlink" title="配置SSH Key"></a>配置SSH Key</h3><p>要使用git工具首先要配置SSH Key。</p>
+<h4 id="登录GitHub创建仓库"><a href="#登录GitHub创建仓库" class="headerlink" title="登录GitHub创建仓库"></a>登录GitHub创建仓库</h4><p>首先请注册一个GitHub账号，登陆后创建一个新的仓库用来存放博客内容。</p>
+<div class="image-size-700">
+<img src="/2020/01/01/%E5%88%A9%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/newrepo.png" class title="avatar">
+</div>
+新建时仓库名称为xxx.github.io,xxx必须为自己的用户名，如下图所示。描述里面可以自由发挥，然后直接创建就可以了。
+<div class="image-size-700">
+<img src="/2020/01/01/%E5%88%A9%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/name.png" class title="avatar">
+</div>
+
+<h4 id="生成SSH-Key"><a href="#生成SSH-Key" class="headerlink" title="生成SSH Key"></a>生成SSH Key</h4><p>配置Guthub用户信息<br><code>git config --global user.name &quot;GitHub用户名&quot;</code><br><code>git config --global user.email &quot;GitHub邮箱&quot;</code><br>在命令行中执行下面命令，生成ssh key<br><code>ssh-keygen -t rsa -C &quot;注册GitHub的邮箱&quot;</code><br>然后一路回车下去就可以了，下图中由于我已经生成了，所以我输入了n，没有ssh key的输入y就可以了。这样</p>
+<div class="image-size-500">
+<img src="/2020/01/01/%E5%88%A9%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/ssh.png" class title="avatar">
+</div>
+生成的ssh key文件在上图红框中。进入改文件夹，将公钥部分配置到刚才所创建的GitHub仓库的ssh key中去。该文件用记事本即可打开。
+<div class="image-size-500">
+<img src="/2020/01/01/%E5%88%A9%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/pub.png" class title="avatar">
+</div>
+进入GitHub个人设置，找到SSH and GPG keys这一栏，选择New SSH key,然后将刚才所复制的公钥的内容拷贝进去即可，title可以随意填写。
+<div class="image-size-700">
+<img src="/2020/01/01/%E5%88%A9%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/newkey.png" class title="avatar">
+</div>
+
+<p>这样SSH key就配置完成了，可以在命令行中输入下述指令来确认配置成功<br><code>ssh git@github.com</code></p>
 <h3 id="安装远程部署插件"><a href="#安装远程部署插件" class="headerlink" title="安装远程部署插件"></a>安装远程部署插件</h3><p>在命令行中输入<br><code>npm install hexo-deployer-git --save</code></p>
-<h2 id="了解更多-Hexo"><a href="#了解更多-Hexo" class="headerlink" title="了解更多: Hexo"></a>了解更多: <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></h2>
+<h3 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h3><p>打开你为博客所创建的文件夹，文件夹中有一个名称为_config.yml的文件，这个文件里变存放着一些博客的基础信息。你需要修改网址的名称，主题，博主的名字，或是头像，都是在这个文件中进行更改。网上有部分教程是利用命令行对文件进行更改，这里我并不赞同没有Linux基础知识的人用这一方式，因为这一方式确实比较麻烦。我比较推荐下载Visual Studio Code这一编辑器进行操作。这一编辑器不仅可以操作这类文件，后面撰写博文也需要用到markdown编辑器，而这一编辑器也可以胜任这一工作。如果实在不愿意下载新的软件，那用记事本打开进行修改也可以。<br>打开_config.yml文件，修改deploy信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#39;git&#39;</span><br><span class="line">  repo: Github中博客仓库的网址</span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure>
+<p>这样准备工作就做好了。</p>
+<h3 id="部署博客-1"><a href="#部署博客-1" class="headerlink" title="部署博客"></a>部署博客</h3><p>生成博客<br><code>hexo g</code><br>部署博客<br><code>hexo d</code><br>这样博客就部署完成了，博客的地址就是仓库的名字。打开浏览器，输入地址，便可以在网上浏览自己的博客了！需要注意的是，部署博客需要一段时间，可能几秒，也可能几分钟。如果你修改了博客内容并部署成功，然后兴奋地去网页查看发现却没有发现变化，这时不要心急，等几分钟再看看。</p>
+<h2 id="更换博客主题"><a href="#更换博客主题" class="headerlink" title="更换博客主题"></a>更换博客主题</h2><p>很多为hexo博客制作了精美的主题，用户只需要下载主题，然后更换主题即可。目前用的比较多的主题有next主题和yilia主题。我所使用的就是next主题。下面我以next主题为例，介绍如何给博客更换主题。</p>
+<h3 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h3><p>命令行中输入后等待下载<br><code>git clone https://github.com/theme-next/hexo-theme-next themes/next</code></p>
+<h3 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h3><p>打开_config.yml文件,将theme后面内容修改为next。这里一定要注意空格，千万不要在原有基础上增加空格或减少空格。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https:&#x2F;&#x2F;hexo.io&#x2F;plugins&#x2F;</span><br><span class="line">## Themes: https:&#x2F;&#x2F;hexo.io&#x2F;themes&#x2F;</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+
+<p>然后重新生成一下博客就可以了。<br><code>hexo g</code><br>输入启动博客，并在本地看看是否修改成功，如果修改成功，那么就可以部署到远端了。<br><code>hexo s</code></p>
+<h3 id="撰写博客"><a href="#撰写博客" class="headerlink" title="撰写博客"></a>撰写博客</h3><p>放在博客上的博文应该是markdown格式的文件。markdown基本语法非常简单，这里我也不进行介绍了。将写好的博文存放到blog\source_post文件夹中，输入命令生成博客就可以了。<br><code>hexo g</code></p>
+<h2 id="了解更多内容-Hexo"><a href="#了解更多内容-Hexo" class="headerlink" title="了解更多内容: Hexo"></a>了解更多内容: <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></h2><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>这是我的第一篇技术博客。接受了来在TM的challenge，希望你看了这篇博客可以顺利地搭建自己的博客。内容有不足不清楚之处还请多多包含指正。<br>在19年11月考完二级笔译之后我本觉得自己应该可以顺利通过，于是我就开始安排后面的学习计划。之前一直都想自己维护一个网站，于是我想着从简单的搭建博客开始入手，学习一下网页前端的知识，同时进行基础语言的学习。谁知道正当我研究前端知识时，二级笔译的滑铁卢打乱了我的计划。20年1月15日成绩在网上公布，最终没能通过考试。于是今年还得继续二级笔译的复习。经过分析和查阅了一些经验贴，我认为是我的英译汉存在不足。翻译和阅读理解不一样，译出来的译文并不只是把作者表达的意思写出来就行了。翻译就是写作！英译汉不是对英语的考察，更多的是对汉语的考察。所以后面虽然博客计划被我搁置了，但是我还是会坚持发布自己的博文和大家交流。主题可能多种多样，但是技术贴可能就没有了。所以这是我第一篇技术博客，也将是我近期的最后一篇技术博客。后面我将会围绕多个主题进行分享、写作。本人水平有限，内容看法一定会存在肤浅的地方，这时就希望读者朋友们（主要就你们几个知道我地址的lol）给我提出宝贵意见。<br>最近新型冠状病毒肆虐，我的家乡武汉是受灾最严重的城市，同时也是引起其他城市遭受灾难的源头。对于家乡的遭遇，我感到十分难受，不过每天都看到医护人员和各界人士的暖心故事也让我为之一振。这让我想到基辛格的《论中国》里的一句话-中国总是被他们最勇敢的人保护得很好。这些平凡的医护人员面对危险毫不退缩，勇于担当，为武汉人民的健康提供了有力保障。一方有难，八方支援。其他省市的医护人员也纷纷写下志愿书，希望能来到武汉贡献自己的力量。最近每天都有更多的人感染病毒，也有更多的人离世。这些消息让今年春节不再那么欢庆。但是我相信中国的医护人员，相信广大的中国人民有信心有能力度过难关。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>下期再见</strong></p>
+
     </div>
 
     
@@ -398,7 +439,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Node-js-Git"><span class="nav-number">1.1.</span> <span class="nav-text">Node.js + Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装过程"><span class="nav-number">1.2.</span> <span class="nav-text">安装过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开始搭建博客"><span class="nav-number">1.3.</span> <span class="nav-text">开始搭建博客</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#将博客部署到远端"><span class="nav-number">2.</span> <span class="nav-text">将博客部署到远端</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置SSH-Key"><span class="nav-number">2.1.</span> <span class="nav-text">配置SSH Key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装远程部署插件"><span class="nav-number">2.2.</span> <span class="nav-text">安装远程部署插件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#了解更多-Hexo"><span class="nav-number">3.</span> <span class="nav-text">了解更多: Hexo</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Hexo博客"><span class="nav-number">1.</span> <span class="nav-text">安装Hexo博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Node-js-Git"><span class="nav-number">1.1.</span> <span class="nav-text">Node.js + Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装过程"><span class="nav-number">1.2.</span> <span class="nav-text">安装过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开始搭建博客"><span class="nav-number">1.3.</span> <span class="nav-text">开始搭建博客</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署博客"><span class="nav-number">2.</span> <span class="nav-text">部署博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置SSH-Key"><span class="nav-number">2.1.</span> <span class="nav-text">配置SSH Key</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#登录GitHub创建仓库"><span class="nav-number">2.1.1.</span> <span class="nav-text">登录GitHub创建仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#生成SSH-Key"><span class="nav-number">2.1.2.</span> <span class="nav-text">生成SSH Key</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装远程部署插件"><span class="nav-number">2.2.</span> <span class="nav-text">安装远程部署插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改配置文件"><span class="nav-number">2.3.</span> <span class="nav-text">修改配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署博客-1"><span class="nav-number">2.4.</span> <span class="nav-text">部署博客</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更换博客主题"><span class="nav-number">3.</span> <span class="nav-text">更换博客主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载主题"><span class="nav-number">3.1.</span> <span class="nav-text">下载主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置主题"><span class="nav-number">3.2.</span> <span class="nav-text">配置主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#撰写博客"><span class="nav-number">3.3.</span> <span class="nav-text">撰写博客</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#了解更多内容-Hexo"><span class="nav-number">4.</span> <span class="nav-text">了解更多内容: Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后记"><span class="nav-number">5.</span> <span class="nav-text">后记</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
